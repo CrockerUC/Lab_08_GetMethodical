@@ -185,4 +185,27 @@ public class SafeInput
         } while(!done);
         return val;
     }
+
+    /**
+     * The top and bottom rows consist of a series of asterisks. A message is displayed
+     * on the second of three rows The message is centered within the second row, but
+     * there are three asterisks at the start and end of the row. The three at the end
+     * of the row line up with the series of asterisks on the first and third lines.
+     * @param msg the message to display
+     */
+    public static void prettyHeader(String msg)
+    {
+        int width = 60;
+        for(int i = 0; i < width; i++) System.out.print("*");
+        System.out.println();
+        int msgLength = msg.length();
+        int spaces = (width - 6 - msgLength) / 2;
+        System.out.print("***");
+        for(int i = 0; i < spaces; i++) System.out.print(" ");
+        System.out.print(msg);
+        for(int i = 0; i < width - 6 - spaces - msgLength; i++) System.out.print(" ");
+        System.out.println("***");
+        for(int i = 0; i < width; i++) System.out.print("*");
+        System.out.println();
+    }
 }
