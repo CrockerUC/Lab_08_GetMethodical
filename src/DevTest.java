@@ -11,6 +11,8 @@ public class DevTest
 //        System.out.println("You entered: " + userInt);
 //        double userDouble = getDouble(scanner, "Enter a double");
 //        System.out.println("You entered: " + userDouble);
+//        int userRangedInt = getRangedInt(scanner, "Enter an integer", 1, 10);
+//        System.out.println("You entered: " + userRangedInt);
     }
 
     /**
@@ -87,6 +89,38 @@ public class DevTest
 //            {
 //                String trash = pipe.nextLine();
 //                System.out.println("Enter a valid double, not " + trash);
+//            }
+//        } while(!done);
+//        return val;
+//    }
+
+    /**
+     * A method that prompts the user to input an integer within a specified inclusive range. (inclusive
+     * means that low and high are valid inputs)
+     * @param pipe a Scanner opened to read from System.in
+     * @param prompt prompt for the user
+     * @param low the lowest value that is valid
+     * @param high the highest value that is valid
+     * @return an integer within the specified range
+     */
+//    public static int getRangedInt(Scanner pipe, String prompt, int low, int high)
+//    {
+//        boolean done = false;
+//        int val = 0;
+//        do
+//        {
+//            System.out.print(prompt + ": ");
+//            if(pipe.hasNextInt())
+//            {
+//                val = pipe.nextInt();
+//                pipe.nextLine();
+//                if(val >= low && val <= high) done = true;
+//                else System.out.println("Integer must be between " + low + " and " + high);
+//            }
+//            else
+//            {
+//                String trash = pipe.nextLine();
+//                System.out.println("Enter a valid integer, not " + trash);
 //            }
 //        } while(!done);
 //        return val;
