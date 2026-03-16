@@ -15,6 +15,12 @@ public class DevTest {
 //        System.out.println("You entered: " + userRangedDouble);
 //        boolean userYNConfirm = getYNConfirm(scanner, "Do you want to continue?");
 //        System.out.println("You entered: " + userYNConfirm);
+//        String userRegExString = getRegExString(scanner, "Enter a string", "[a-zA-Z]+");
+//        System.out.println("You entered: " + userRegExString);
+//        String SSN_regex = "[0-9]{3}-[0-9]{2}-[0-9]{4}";
+//        String userSSN = getRegExString(scanner, "Enter a SSN", SSN_regex);
+//        System.out.println("You entered: " + userSSN);
+
     }
 
     /**
@@ -189,10 +195,19 @@ public class DevTest {
      * @param regEx regular expression pattern to match
      * @return a String that matches the specified RegEx pattern
      */
-    public static String getRegExString(Scanner pipe, String prompt, String regEx)
-    {
-        return "";
-    }
+//    public static String getRegExString(Scanner pipe, String prompt, String regEx)
+//    {
+//        boolean done = false;
+//        String val;
+//        do
+//        {
+//            System.out.print(prompt + ": ");
+//            val = pipe.nextLine();
+//            if(val.matches(regEx)) done = true;
+//            else System.out.println("Please enter a string that matches the pattern " + regEx + " Not: " + val);
+//        } while(!done);
+//        return val;
+//    }
 
 
 }

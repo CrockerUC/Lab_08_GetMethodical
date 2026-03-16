@@ -165,6 +165,24 @@ public class SafeInput
         return val.equalsIgnoreCase("Y");
     }
 
-
-
+    /**
+     * A method that prompts the user to input a String that matches a RegEx pattern.
+     * @param pipe a Scanner opened to read from System.in
+     * @param prompt prompt for the user
+     * @param regEx regular expression pattern to match
+     * @return a String that matches the specified RegEx pattern
+     */
+    public static String getRegExString(Scanner pipe, String prompt, String regEx)
+    {
+        boolean done = false;
+        String val;
+        do
+        {
+            System.out.print(prompt + ": ");
+            val = pipe.nextLine();
+            if(val.matches(regEx)) done = true;
+            else System.out.println("Please enter a string that matches the pattern " + regEx + " Not: " + val);
+        } while(!done);
+        return val;
+    }
 }
