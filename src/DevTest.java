@@ -2,25 +2,34 @@ import java.util.Scanner;
 
 public class DevTest {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+
 //        String userString = getNonZeroLenString(scanner, "Enter a string");
 //        System.out.println("You entered: " + userString);
+
 //        int userInt = getInt(scanner, "Enter an integer");
 //        System.out.println("You entered: " + userInt);
+
 //        double userDouble = getDouble(scanner, "Enter a double");
 //        System.out.println("You entered: " + userDouble);
+
 //        int userRangedInt = getRangedInt(scanner, "Enter an integer", 1, 10);
 //        System.out.println("You entered: " + userRangedInt);
+
 //        double userRangedDouble = getRangedDouble(scanner, "Enter a double", 1.0, 10.0);
 //        System.out.println("You entered: " + userRangedDouble);
+
 //        boolean userYNConfirm = getYNConfirm(scanner, "Do you want to continue?");
 //        System.out.println("You entered: " + userYNConfirm);
+
 //        String userRegExString = getRegExString(scanner, "Enter a string", "[a-zA-Z]+");
 //        System.out.println("You entered: " + userRegExString);
 //        String SSN_regex = "[0-9]{3}-[0-9]{2}-[0-9]{4}";
 //        String userSSN = getRegExString(scanner, "Enter a SSN", SSN_regex);
 //        System.out.println("You entered: " + userSSN);
 
+//        String name = SafeInput.getNonZeroLenString(new Scanner(System.in), "Enter your name");
+//        System.out.println("Hello " + name);
     }
 
     /**
