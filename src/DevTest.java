@@ -13,6 +13,8 @@ public class DevTest {
 //        System.out.println("You entered: " + userRangedInt);
 //        double userRangedDouble = getRangedDouble(scanner, "Enter a double", 1.0, 10.0);
 //        System.out.println("You entered: " + userRangedDouble);
+//        boolean userYNConfirm = getYNConfirm(scanner, "Do you want to continue?");
+//        System.out.println("You entered: " + userYNConfirm);
     }
 
     /**
@@ -158,4 +160,39 @@ public class DevTest {
 //        } while(!done);
 //        return val;
 //    }
+
+    /**
+     * A method that gets a Yes or No [Y/N] returning true for yes and false for no. It should
+     * accept yYnN as valid responses and loop until it gets one of them.
+     * @param pipe a Scanner opened to read from System.in
+     * @param prompt prompt for the user
+     * @return true if user enters 'Y' or 'y', false if user enters 'N' or 'n'
+     */
+//    public static boolean getYNConfirm(Scanner pipe, String prompt)
+//    {
+//        boolean done = false;
+//        String val;
+//        do
+//        {
+//            System.out.print(prompt + "[Y/N]: ");
+//            val = pipe.nextLine();
+//            if(val.equalsIgnoreCase("Y") || val.equalsIgnoreCase("N")) done = true;
+//            else System.out.println("Please enter Y or N");
+//        }while(!done);
+//        return val.equalsIgnoreCase("Y");
+//    }
+
+    /**
+     * A method that prompts the user to input a String that matches a RegEx pattern.
+     * @param pipe a Scanner opened to read from System.in
+     * @param prompt prompt for the user
+     * @param regEx regular expression pattern to match
+     * @return a String that matches the specified RegEx pattern
+     */
+    public static String getRegExString(Scanner pipe, String prompt, String regEx)
+    {
+        return "";
+    }
+
+
 }
