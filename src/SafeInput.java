@@ -111,4 +111,38 @@ public class SafeInput
         } while(!done);
         return val;
     }
+
+    /**
+     * A method that prompts the user for a double within a specified range. (inclusive
+     * means that low and high are valid inputs)
+     * @param pipe a Scanner opened to read from System.in
+     * @param prompt prompt for the user
+     * @param low the lowest value that is valid
+     * @param high the highest value that is valid
+     * @return an integer within the specified range
+     */
+    public static double getRangedDouble(Scanner pipe, String prompt, double low, double high)
+    {
+        boolean done = false;
+        double val = 0.0;
+        do
+        {
+            System.out.print(prompt + ": ");
+            if (pipe.hasNextDouble())
+            {
+                val = pipe.nextDouble();
+                pipe.nextLine();
+                if(val >= low && val <= high) done = true;
+                else System.out.println("Double must be between " + low + " and " + high);
+            }
+            else
+            {
+                String trash = pipe.nextLine();
+                System.out.println("Enter a valid double, not " + trash);
+            }
+        } while(!done);
+        return val;
+    }
+
+
 }
